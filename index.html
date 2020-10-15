@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Новая Столовая</title>
+</head>
+
+<body>
+    <div class="overflow">
+
+        <!-- Header Top -->
+        <div class="header-top-box">
+            <div class="container container--header-top">
+                <div class="header-top">
+                    <div class="header-top__number">
+                        <a href="tel:+375257955064" class="header-top__number-link">+ 375 (25) 795-50-64</a>
+                    </div>
+                    <div class="header-top__buttons">
+                        <button type="button" class="button button--instagram" onclick="document.location='#'">
+                            <span class="visually-hidden">Instagram</span>
+                        </button>
+                        <button type="button" class="button button--search" onclick="document.location='#'">
+                            <span class="visually-hidden">Search</span>
+                        </button>
+                        <button type="button" class="button button--user" onclick="document.location='#'">
+                            <span class="visually-hidden">User</span>
+                        </button>
+                        <button type="button" class="button button--cart" onclick="document.location='#'">
+                            <span class="visually-hidden">Cart</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header-inner__top">
+                <div class="container container--header-inner">
+                    <div class="header-inner__top-logo">
+                        <img src="images/logo/logo_header.svg" alt="Новая Столовая" class="header-logo">
+                        <span class="header-logo-text">Веганская Столовая</span>
+                    </div>
+
+                    <!-- Nav -->
+                    <nav class="header-inner__top-nav">
+                        <ul class="top-nav__list">
+                            <li class="top-nav__item nav-select" id="nav-toggle-menu">
+                                <a href="#" class="top-nav__item-link">Меню</a>
+
+                                <!-- Drop Down Menu -->
+                                <div class="drop-down__menu" id="drop-down-menu">
+                                    <ul class="drop-down__menu-list">
+                                        <li class="drop-down__menu-item">
+                                            <a href="#" class="drop-down__menu-item-link">Завтраки</a>
+                                        </li>
+                                        <li class="drop-down__menu-item">
+                                            <a href="#" class="drop-down__menu-item-link">Обеды</a>
+                                        </li>
+                                        <li class="drop-down__menu-item">
+                                            <a href="#" class="drop-down__menu-item-link">Десерты</a>
+                                        </li>
+                                        <li class="drop-down__menu-item">
+                                            <a href="#" class="drop-down__menu-item-link">Хлеб и выпечка</a>
+                                        </li>
+                                        <li class="drop-down__menu-item">
+                                            <a href="#" class="drop-down__menu-item-link">Соусы и намазки</a>
+                                        </li>
+                                        <li class="drop-down__menu-item">
+                                            <a href="#" class="drop-down__menu-item-link">Напитки</a>
+                                        </li>
+                                    </ul>
+                                </div><!-- .drop-down__menu -->
+                            </li>
+
+                            <li class="top-nav__item nav-select" id="nav-toggle-magazine">
+                                <a href="#" class="top-nav__item-link">Магазин</a>
+
+                                <!-- Drop Down Magazine -->
+                                <div class="drop-down__menu drop-down__menu--magazine" id="drop-down-magazine">
+                                    <ul class="drop-down__menu-list">
+                                        <li class="drop-down__menu-item">
+                                            <a href="#" class="drop-down__menu-item-link">Завтраки</a>
+                                        </li>
+                                        <li class="drop-down__menu-item">
+                                            <a href="#" class="drop-down__menu-item-link">Обеды</a>
+                                        </li>
+                                        <li class="drop-down__menu-item">
+                                            <a href="#" class="drop-down__menu-item-link">Десерты</a>
+                                        </li>
+                                        <li class="drop-down__menu-item">
+                                            <a href="#" class="drop-down__menu-item-link">Хлеб и выпечка</a>
+                                        </li>
+                                        <li class="drop-down__menu-item">
+                                            <a href="#" class="drop-down__menu-item-link">Соусы и намазки</a>
+                                        </li>
+                                        <li class="drop-down__menu-item">
+                                            <a href="#" class="drop-down__menu-item-link">Напитки</a>
+                                        </li>
+                                    </ul>
+                                </div><!-- .drop-down__menu--magazine -->
+                            </li>
+
+                            <li class="top-nav__item">
+                                <a href="#" class="top-nav__item-link">Подписка</a>
+                            </li>
+                            <li class="top-nav__item">
+                                <a href="#" class="top-nav__item-link">Доставка</a>
+                            </li>
+                            <li class="top-nav__item">
+                                <a href="#" class="top-nav__item-link">Партнерам</a>
+                            </li>
+                            <li class="top-nav__item">
+                                <a href="#" class="top-nav__item-link">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <!-- Nav-toggle-burger -->
+                    <button class="nav-toggle-burger" id="nav-toggle-burger" type="button">
+                        <span class="nav-toggle-burger-item">
+                            <span class="visually-hidden">
+                                Menu
+                            </span>
+                        </span>
+                    </button>
+
+                    <!-- Nav toggle drop down -->
+                    <div class="drop-down__menu nav-toggle-drop-down" id="nav-toggle-drop-down">
+                        <ul class="drop-down__menu-list">
+                            <li class="drop-down__menu-item nav-select nav-toggle-drop-down-item" id="nav-toggle-drop-down-item">
+                                <a href="#" class="drop-down__menu-item-link">Меню</a>
+                            </li>
+                            <li class="drop-down__menu-item nav-toggle-drop-down-item" id="drop-down__menu-list--nav-toggle">
+                                <ul class="drop-down__menu-list drop-down__menu-list--nav-toggle">
+                                    <li class="drop-down__menu-item drop-down__menu-item--nav-toggle">
+                                        <a href="#" class="drop-down__menu-item-link drop-down__menu-item-link--nav-toggle">Завтраки</a>
+                                    </li>
+                                    <li class="drop-down__menu-item drop-down__menu-item--nav-toggle">
+                                        <a href="#" class="drop-down__menu-item-link drop-down__menu-item-link--nav-toggle">Обеды</a>
+                                    </li>
+                                    <li class="drop-down__menu-item drop-down__menu-item--nav-toggle">
+                                        <a href="#" class="drop-down__menu-item-link drop-down__menu-item-link--nav-toggle">Десерты</a>
+                                    </li>
+                                    <li class="drop-down__menu-item drop-down__menu-item--nav-toggle">
+                                        <a href="#" class="drop-down__menu-item-link drop-down__menu-item-link--nav-toggle">Хлеб и выпечка</a>
+                                    </li>
+                                    <li class="drop-down__menu-item drop-down__menu-item--nav-toggle">
+                                        <a href="#" class="drop-down__menu-item-link drop-down__menu-item-link--nav-toggle">Соусы и намазки</a>
+                                    </li>
+                                    <li class="drop-down__menu-item drop-down__menu-item--nav-toggle">
+                                        <a href="#" class="drop-down__menu-item-link drop-down__menu-item-link--nav-toggle">Напитки</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="drop-down__menu-item nav-select nav-toggle-drop-down-item" id="nav-toggle-drop-down-item-2">
+                                <a href="#" class="drop-down__menu-item-link">Магазин</a>
+                            </li>
+                            <li class="drop-down__menu-item nav-toggle-drop-down-item" id="drop-down__menu-list--nav-toggle-2">
+                                <ul class="drop-down__menu-list drop-down__menu-list--nav-toggle">
+                                    <li class="drop-down__menu-item drop-down__menu-item--nav-toggle">
+                                        <a href="#" class="drop-down__menu-item-link drop-down__menu-item-link--nav-toggle">Завтраки</a>
+                                    </li>
+                                    <li class="drop-down__menu-item drop-down__menu-item--nav-toggle">
+                                        <a href="#" class="drop-down__menu-item-link drop-down__menu-item-link--nav-toggle">Обеды</a>
+                                    </li>
+                                    <li class="drop-down__menu-item drop-down__menu-item--nav-toggle">
+                                        <a href="#" class="drop-down__menu-item-link drop-down__menu-item-link--nav-toggle">Десерты</a>
+                                    </li>
+                                    <li class="drop-down__menu-item drop-down__menu-item--nav-toggle">
+                                        <a href="#" class="drop-down__menu-item-link drop-down__menu-item-link--nav-toggle">Хлеб и выпечка</a>
+                                    </li>
+                                    <li class="drop-down__menu-item drop-down__menu-item--nav-toggle">
+                                        <a href="#" class="drop-down__menu-item-link drop-down__menu-item-link--nav-toggle">Соусы и намазки</a>
+                                    </li>
+                                    <li class="drop-down__menu-item drop-down__menu-item--nav-toggle">
+                                        <a href="#" class="drop-down__menu-item-link drop-down__menu-item-link--nav-toggle">Напитки</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="drop-down__menu-item nav-toggle-drop-down-item">
+                                <a href="#" class="drop-down__menu-item-link">Подписка</a>
+                            </li>
+                            <li class="drop-down__menu-item nav-toggle-drop-down-item">
+                                <a href="#" class="drop-down__menu-item-link">Доставка</a>
+                            </li>
+                            <li class="drop-down__menu-item nav-toggle-drop-down-item">
+                                <a href="#" class="drop-down__menu-item-link">Партнерам</a>
+                            </li>
+                            <li class="drop-down__menu-item nav-toggle-drop-down-item">
+                                <a href="#" class="drop-down__menu-item-link">Контакты</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div><!-- .header-inner__top -->
+        </div>
+
+        <div class="filter">
+
+            <!-- Header -->
+            <header class="header">
+
+                <div class="header-inner">
+                    <div class="container">
+                        <div class="header-inner__center">
+                            <h1 class="header-inner__center-heading">
+                                Medium length display headline
+                            </h1>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                                euismod bibendum laoreet. Proin gravida dolor sit amet lacus
+                                accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor.
+                            </p>
+                            <button type="button" class="main-button header-inner__center-button button" onclick="document.location='#'">
+                                Подробнее
+                            </button>
+                        </div>
+                    </div>
+                </div><!-- .header-inner -->
+
+                <!-- Header bottom design -->
+                <img src="images/borber-white.png" alt="*" class="border">
+            </header>
+
+            <!-- Section Lunch -->
+            <section class="section background">
+                <div class="container">
+                    <div class="section-heading">
+                        <h2 class="section-heading__title">Обеды</h2>
+                        <p class="section-heading__subtitle">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
+                            Aenean euismod bibendum laoreet.
+                        </p>
+                    </div>
+
+                    <ul class="section-list">
+                        <li class="section-list__item">
+                            <a href="#" class="section-list__item-link">Понедельник</a>
+                        </li>
+                        <li class="section-list__item">
+                            <a href="#" class="section-list__item-link">Вторник</a>
+                        </li>
+                        <li class="section-list__item">
+                            <a href="#" class="section-list__item-link">Среда</a>
+                        </li>
+                        <li class="section-list__item">
+                            <a href="#" class="section-list__item-link">Четверг</a>
+                        </li>
+                        <li class="section-list__item">
+                            <a href="#" class="section-list__item-link">Пятница</a>
+                        </li>
+                        <li class="section-list__item">
+                            <a href="#" class="section-list__item-link">Суббота</a>
+                        </li>
+                        <li class="section-list__item">
+                            <a href="#" class="section-list__item-link">Воскресенье</a>
+                        </li>
+                    </ul>
+
+                    <div class="section-cards">
+                        <div class="slider-arrow slider-arrow--prev">
+                            <span class="visually-hidden">Prev</span>
+                        </div>
+
+                        <div class="section-card__item">
+                            <img src="images/cards/1.png" alt="Карточка товара" class="section-card__item-img">
+                            <div class="section-card__item-content">
+                                <h3 class="content-title">
+                                    <a href="#" class="content-title__link">
+                                        Морковный крем-суп<br>
+                                        с имбирем и печеным нутом
+                                    </a>
+                                </h3>
+                                <div class="content-information">
+                                    <span class="content-information__weight">170г</span>
+                                    <span class="content-information__cost">2.5р</span>
+                                </div>
+                                <form action="#">
+                                    <fieldset>
+                                        <button type="button" class="button button__less-more" onclick="return false">-</button>
+                                        <span class="less-more">2</span>
+                                        <button type="button" class="button button__less-more" onclick="return false">+</button>
+                                    </fieldset>
+                                    <button type="submit" class="button button-submit" onclick="return false">В корзину</button>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="section-card__item">
+                            <img src="images/cards/1.png" alt="Карточка товара" class="section-card__item-img">
+                            <div class="section-card__item-content">
+                                <h3 class="content-title">
+                                    <a href="#" class="content-title__link">
+                                        Морковный крем-суп<br>
+                                        с имбирем и печеным нутом
+                                    </a>
+                                </h3>
+                                <div class="content-information">
+                                    <span class="content-information__weight">170г</span>
+                                    <span class="content-information__cost">2.5р</span>
+                                </div>
+                                <form action="#">
+                                    <fieldset>
+                                        <button type="button" class="button button__less-more" onclick="return false">-</button>
+                                        <span class="less-more">2</span>
+                                        <button type="button" class="button button__less-more" onclick="return false">+</button>
+                                    </fieldset>
+                                    <button type="submit" class="button button-submit" onclick="return false">В корзину</button>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="section-card__item">
+                            <img src="images/cards/1.png" alt="Карточка товара" class="section-card__item-img">
+                            <div class="section-card__item-content">
+                                <h3 class="content-title">
+                                    <a href="#" class="content-title__link">
+                                        Морковный крем-суп<br>
+                                        с имбирем и печеным нутом
+                                    </a>
+                                </h3>
+                                <div class="content-information">
+                                    <span class="content-information__weight">170г</span>
+                                    <span class="content-information__cost">2.5р</span>
+                                </div>
+                                <h3 class="add-info">
+                                    Только во вторник
+                                </h3>
+                            </div>
+                        </div>
+
+                        <div class="section-card__item">
+                            <img src="images/cards/1.png" alt="Карточка товара" class="section-card__item-img">
+                            <div class="section-card__item-content">
+                                <h3 class="content-title">
+                                    <a href="#" class="content-title__link">
+                                        Морковный крем-суп<br>
+                                        с имбирем и печеным нутом
+                                    </a>
+                                </h3>
+                                <div class="content-information">
+                                    <span class="content-information__weight">170г</span>
+                                    <span class="content-information__cost">2.5р</span>
+                                </div>
+                                <form action="#">
+                                    <fieldset>
+                                        <button type="button" class="button button__less-more" onclick="return false">-</button>
+                                        <span class="less-more">2</span>
+                                        <button type="button" class="button button__less-more" onclick="return false">+</button>
+                                    </fieldset>
+                                    <button type="submit" class="button button-submit" onclick="return false">В корзину</button>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="slider-arrow slider-arrow--next">
+                            <span class="visually-hidden">Next</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section Menu -->
+            <section class="section background background--gray">
+                <div class="container">
+                    <div class="section-heading">
+                        <h2 class="section-heading__title">Меню</h2>
+                        <p class="section-heading__subtitle">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
+                            Aenean euismod bibendum laoreet.
+                        </p>
+                    </div>
+
+                    <ul class="section-list">
+                        <li class="section-list__item">
+                            <a href="#" class="section-list__item-link">Десерты</a>
+                        </li>
+                        <li class="section-list__item">
+                            <a href="#" class="section-list__item-link">Хлеб и выпечка</a>
+                        </li>
+                        <li class="section-list__item">
+                            <a href="#" class="section-list__item-link">Соусы и намазки</a>
+                        </li>
+                        <li class="section-list__item">
+                            <a href="#" class="section-list__item-link">Напитки</a>
+                        </li>
+                        <li class="section-list__item">
+                            <a href="#" class="section-list__item-link">Завтраки</a>
+                        </li>
+                    </ul>
+
+                    <div class="section-cards">
+                        <div class="slider-arrow slider-arrow--prev">
+                            <span class="visually-hidden">Prev</span>
+                        </div>
+
+                        <div class="section-card__item">
+                            <img src="images/cards/2.png" alt="Карточка товара" class="section-card__item-img">
+                            <div class="section-card__item-content">
+                                <h3 class="content-title">
+                                    <a href="#" class="content-title__link">
+                                        Морковный крем-суп<br>
+                                        с имбирем и печеным нутом
+                                    </a>
+                                </h3>
+                                <div class="content-information">
+                                    <span class="content-information__weight">170г</span>
+                                    <span class="content-information__cost">7.5р</span>
+                                </div>
+                                <h3 class="add-info">
+                                    Только во вторник
+                                </h3>
+                            </div>
+                        </div>
+
+                        <div class="section-card__item">
+                            <img src="images/cards/2.png" alt="Карточка товара" class="section-card__item-img">
+                            <div class="section-card__item-content">
+                                <h3 class="content-title">
+                                    <a href="#" class="content-title__link">
+                                        Морковный крем-суп<br>
+                                        с имбирем и печеным нутом
+                                    </a>
+                                </h3>
+                                <div class="content-information">
+                                    <span class="content-information__weight">170г</span>
+                                    <span class="content-information__cost">7.5р</span>
+                                </div>
+                                <form action="#">
+                                    <fieldset>
+                                        <button type="button" class="button button__less-more" onclick="return false">-</button>
+                                        <span class="less-more">2</span>
+                                        <button type="button" class="button button__less-more" onclick="return false">+</button>
+                                    </fieldset>
+                                    <button type="submit" class="button button-submit" onclick="return false">В корзину</button>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="section-card__item">
+                            <img src="images/cards/2.png" alt="Карточка товара" class="section-card__item-img">
+                            <div class="section-card__item-content">
+                                <h3 class="content-title">
+                                    <a href="#" class="content-title__link">
+                                        Морковный крем-суп<br>
+                                        с имбирем и печеным нутом
+                                    </a>
+                                </h3>
+                                <div class="content-information">
+                                    <span class="content-information__weight">170г</span>
+                                    <span class="content-information__cost">7.5р</span>
+                                </div>
+                                <form action="#">
+                                    <fieldset>
+                                        <button type="button" class="button button__less-more" onclick="return false">-</button>
+                                        <span class="less-more">2</span>
+                                        <button type="button" class="button button__less-more" onclick="return false">+</button>
+                                    </fieldset>
+                                    <button type="submit" class="button button-submit" onclick="return false">В корзину</button>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="section-card__item">
+                            <img src="images/cards/2.png" alt="Карточка товара" class="section-card__item-img">
+                            <div class="section-card__item-content">
+                                <h3 class="content-title">
+                                    <a href="#" class="content-title__link">
+                                        Морковный крем-суп<br>
+                                        с имбирем и печеным нутом
+                                    </a>
+                                </h3>
+                                <div class="content-information">
+                                    <span class="content-information__weight">170г</span>
+                                    <span class="content-information__cost">7.5р</span>
+                                </div>
+                                <form action="#">
+                                    <fieldset>
+                                        <button type="button" class="button button__less-more" onclick="return false">-</button>
+                                        <span class="less-more">2</span>
+                                        <button type="button" class="button button__less-more" onclick="return false">+</button>
+                                    </fieldset>
+                                    <button type="submit" class="button button-submit" onclick="return false">В корзину</button>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="slider-arrow slider-arrow--next">
+                            <span class="visually-hidden">Next</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section About -->
+            <section class="about background">
+                <div class="container container--about">
+                    <div class="about-inner">
+                        <h2 class="section-heading__title">
+                            О проекте
+                        </h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                            euismod bibendum laoreet. Proin gravida dolor sit amet lacus
+                            accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor.
+                        </p>
+                        <button type="button" class="main-button button" onclick="document.location='#'">
+                            Как добраться
+                        </button>
+                    </div>
+                    <img src="images/about.png" alt="Новая столовая" class="about-img">
+                </div>
+            </section>
+
+            <!-- Section Products -->
+            <section class="section background background--gray">
+                <div class="container">
+                    <div class="section-heading">
+                        <h2 class="section-heading__title">
+                            Эко-продукты от «шанти лавка»
+                        </h2>
+                    </div>
+
+                    <div class="section-cards section-cards--prodacts">
+                        <div class="section-card__item section-card__item--prodacts">
+                            <img src="images/cards/3.png" alt="Карточка товара" class="section-card__item-img">
+                            <div class="section-card__item-content">
+                                <span class="content-suptitle">
+                                    <a href="#" class="content-suptitle__link">
+                                        Натуральные масла
+                                    </a>
+                                </span>
+                                <h3 class="content-title">
+                                    <a href="#" class="content-title__link">
+                                        Масло кокосовое
+                                    </a>
+                                </h3>
+                                <div class="content-information">
+                                    <span class="content-information__weight">170г</span>
+                                    <span class="content-information__cost">90р</span>
+                                </div>
+                                <form action="#">
+                                    <fieldset>
+                                        <button type="button" class="button button__less-more" onclick="return false">-</button>
+                                        <span class="less-more">2</span>
+                                        <button type="button" class="button button__less-more" onclick="return false">+</button>
+                                    </fieldset>
+                                    <button type="submit" class="button button-submit" onclick="return false">В корзину</button>
+                                </form>
+                            </div>
+                            <div class="nameplate-box">
+                                <div class="nameplate-container nameplate-container--novelty">
+                                    <span class="nameplate">Новинка</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="section-card__item section-card__item--prodacts">
+                            <img src="images/cards/4.png" alt="Карточка товара" class="section-card__item-img">
+                            <div class="section-card__item-content">
+                                <span class="content-suptitle">
+                                    <a href="#" class="content-suptitle__link">
+                                        Сладости, шоколад, сиропы
+                                    </a>
+                                </span>
+                                <h3 class="content-title">
+                                    <a href="#" class="content-title__link">
+                                        Шоколад на меду горький<br>
+                                        Вкус и Польза
+                                    </a>
+                                </h3>
+                                <div class="content-information">
+                                    <span class="content-information__weight">170г</span>
+                                    <span class="content-information__cost">7.5р</span>
+                                </div>
+                                <form action="#">
+                                    <fieldset>
+                                        <button type="button" class="button button__less-more" onclick="return false">-</button>
+                                        <span class="less-more">2</span>
+                                        <button type="button" class="button button__less-more" onclick="return false">+</button>
+                                    </fieldset>
+                                    <button type="submit" class="button button-submit" onclick="return false">В корзину</button>
+                                </form>
+                            </div>
+                            <div class="nameplate-box">
+                                <div class="nameplate-container nameplate-container--hit">
+                                    <span class="nameplate">Хит</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="section-card__item section-card__item--prodacts">
+                            <img src="images/cards/5.png" alt="Карточка товара" class="section-card__item-img">
+                            <div class="section-card__item-content">
+                                <span class="content-suptitle">
+                                    <a href="#" class="content-suptitle__link">
+                                        Натуральные масла
+                                    </a>
+                                </span>
+                                <h3 class="content-title">
+                                    <a href="#" class="content-title__link">
+                                        Маринованная красная<br>
+                                        капуста
+                                    </a>
+                                </h3>
+                                <div class="content-information">
+                                    <span class="content-information__weight">170г</span>
+                                    <span class="content-information__cost">90р</span>
+                                </div>
+                                <form action="#">
+                                    <fieldset>
+                                        <button type="button" class="button button__less-more" onclick="return false">-</button>
+                                        <span class="less-more">2</span>
+                                        <button type="button" class="button button__less-more" onclick="return false">+</button>
+                                    </fieldset>
+                                    <button type="submit" class="button button-submit" onclick="return false">В корзину</button>
+                                </form>
+                            </div>
+                            <div class="nameplate-box">
+                                <div class="nameplate-container nameplate-container--hit">
+                                    <span class="nameplate">Хит</span>
+                                </div>
+                                <div class="nameplate-container nameplate-container--novelty">
+                                    <span class="nameplate">Новинка</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="section-card__item section-card__item--prodacts">
+                            <img src="images/cards/5.png" alt="Карточка товара" class="section-card__item-img">
+                            <div class="section-card__item-content">
+                                <span class="content-suptitle">
+                                    <a href="#" class="content-suptitle__link">
+                                        Натуральные масла
+                                    </a>
+                                </span>
+                                <h3 class="content-title">
+                                    <a href="#" class="content-title__link">
+                                        Маринованная красная<br>
+                                        капуста
+                                    </a>
+                                </h3>
+                                <div class="content-information">
+                                    <span class="content-information__weight">170г</span>
+                                    <span class="content-information__cost">90р</span>
+                                </div>
+                                <form action="#">
+                                    <fieldset>
+                                        <button type="button" class="button button__less-more" onclick="return false">-</button>
+                                        <span class="less-more">2</span>
+                                        <button type="button" class="button button__less-more" onclick="return false">+</button>
+                                    </fieldset>
+                                    <button type="submit" class="button button-submit" onclick="return false">В корзину</button>
+                                </form>
+                            </div>
+                            <div class="nameplate-box">
+                                <div class="nameplate-container nameplate-container--promotion">
+                                    <span class="nameplate">Акция</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="section-card__item section-card__item--prodacts">
+                            <img src="images/cards/3.png" alt="Карточка товара" class="section-card__item-img">
+                            <div class="section-card__item-content">
+                                <span class="content-suptitle">
+                                    <a href="#" class="content-suptitle__link">
+                                        Натуральные масла
+                                    </a>
+                                </span>
+                                <h3 class="content-title">
+                                    <a href="#" class="content-title__link">
+                                        Масло кокосовое
+                                    </a>
+                                </h3>
+                                <div class="content-information">
+                                    <span class="content-information__weight">170г</span>
+                                    <span class="content-information__cost">90р</span>
+                                </div>
+                                <form action="#">
+                                    <fieldset>
+                                        <button type="button" class="button button__less-more" onclick="return false">-</button>
+                                        <span class="less-more">2</span>
+                                        <button type="button" class="button button__less-more" onclick="return false">+</button>
+                                    </fieldset>
+                                    <button type="submit" class="button button-submit" onclick="return false">В корзину</button>
+                                </form>
+                            </div>
+                            <div class="nameplate-box">
+                                <div class="nameplate-container nameplate-container--novelty">
+                                    <span class="nameplate">Новинка</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="section-card__item section-card__item--prodacts">
+                            <img src="images/cards/4.png" alt="Карточка товара" class="section-card__item-img">
+                            <div class="section-card__item-content">
+                                <span class="content-suptitle">
+                                    <a href="#" class="content-suptitle__link">
+                                        Сладости, шоколад, сиропы
+                                    </a>
+                                </span>
+                                <h3 class="content-title">
+                                    <a href="#" class="content-title__link">
+                                        Шоколад на меду горький<br>
+                                        Вкус и Польза
+                                    </a>
+                                </h3>
+                                <div class="content-information">
+                                    <span class="content-information__weight">170г</span>
+                                    <span class="content-information__cost">7.5р</span>
+                                </div>
+                                <form action="#">
+                                    <fieldset>
+                                        <button type="button" class="button button__less-more" onclick="return false">-</button>
+                                        <span class="less-more">2</span>
+                                        <button type="button" class="button button__less-more" onclick="return false">+</button>
+                                    </fieldset>
+                                    <button type="submit" class="button button-submit" onclick="return false">В корзину</button>
+                                </form>
+                            </div>
+                            <div class="nameplate-box">
+                                <div class="nameplate-container nameplate-container--hit">
+                                    <span class="nameplate">Хит</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="section-card__item section-card__item--prodacts">
+                            <img src="images/cards/5.png" alt="Карточка товара" class="section-card__item-img">
+                            <div class="section-card__item-content">
+                                <span class="content-suptitle">
+                                    <a href="#" class="content-suptitle__link">
+                                        Натуральные масла
+                                    </a>
+                                </span>
+                                <h3 class="content-title">
+                                    <a href="#" class="content-title__link">
+                                        Маринованная красная<br>
+                                        капуста
+                                    </a>
+                                </h3>
+                                <div class="content-information">
+                                    <span class="content-information__weight">170г</span>
+                                    <span class="content-information__cost">90р</span>
+                                </div>
+                                <form action="#">
+                                    <fieldset>
+                                        <button type="button" class="button button__less-more" onclick="return false">-</button>
+                                        <span class="less-more">2</span>
+                                        <button type="button" class="button button__less-more" onclick="return false">+</button>
+                                    </fieldset>
+                                    <button type="submit" class="button button-submit" onclick="return false">В корзину</button>
+                                </form>
+                            </div>
+                            <div class="nameplate-box">
+                                <div class="nameplate-container nameplate-container--hit">
+                                    <span class="nameplate">Хит</span>
+                                </div>
+                                <div class="nameplate-container nameplate-container--novelty">
+                                    <span class="nameplate">Новинка</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="section-card__item section-card__item--prodacts">
+                            <img src="images/cards/5.png" alt="Карточка товара" class="section-card__item-img">
+                            <div class="section-card__item-content">
+                                <span class="content-suptitle">
+                                    <a href="#" class="content-suptitle__link">
+                                        Натуральные масла
+                                    </a>
+                                </span>
+                                <h3 class="content-title">
+                                    <a href="#" class="content-title__link">
+                                        Маринованная красная<br>
+                                        капуста
+                                    </a>
+                                </h3>
+                                <div class="content-information">
+                                    <span class="content-information__weight">170г</span>
+                                    <span class="content-information__cost">90р</span>
+                                </div>
+                                <form action="#">
+                                    <fieldset>
+                                        <button type="button" class="button button__less-more" onclick="return false">-</button>
+                                        <span class="less-more">2</span>
+                                        <button type="button" class="button button__less-more" onclick="return false">+</button>
+                                    </fieldset>
+                                    <button type="submit" class="button button-submit" onclick="return false">В корзину</button>
+                                </form>
+                            </div>
+                            <div class="nameplate-box">
+                                <div class="nameplate-container nameplate-container--promotion">
+                                    <span class="nameplate">Акция</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="button-container">
+                        <button type="button" class="main-button button" onclick="document.location='#'">
+                            Посмотреть все
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section Feedback -->
+            <section class="section background background--last">
+                <div class="container container--flex_column">
+                    <h2 class="section-heading__title">
+                        Отзывы
+                    </h2>
+                    <div class="feedback-box">
+                        <div class="feedback-arrows">
+                            <div class="feedback-container-arrow feedback-container-arrow--prev">
+                                <span class="visually-hidden">Prev-container</span>
+                            </div>
+                            <div class="feedback-arrow feedback-arrow--prev">
+                                <span class="visually-hidden">Prev</span>
+                            </div>
+                        </div>
+
+                        <div class="feedback">
+                            <p class="feedback-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget.
+                            </p>
+                            <address class="feedback-author">
+                                Никита
+                            </address>
+                            <div class="feedback-scale-container">
+                                <img src="images/icons/apple-color.svg" alt="*" class="feedback-scale">
+                                <img src="images/icons/apple-color.svg" alt="*" class="feedback-scale">
+                                <img src="images/icons/apple-color.svg" alt="*" class="feedback-scale">
+                                <img src="images/icons/apple-color.svg" alt="*" class="feedback-scale">
+                                <img src="images/icons/apple.svg" alt="*" class="feedback-scale">
+                            </div>
+                        </div>
+
+                        <div class="feedback-arrows">
+                            <div class="feedback-container-arrow feedback-container-arrow--next">
+                                <span class="visually-hidden">Next-container</span>
+                            </div>
+                            <div class="feedback-arrow feedback-arrow--next">
+                                <span class="visually-hidden">Next</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="buttons-container">
+                        <button type="button" class="main-button button" onclick="document.location='#'">
+                            Написать отзыв
+                        </button>
+                        <button type="button" class="main-button button feedback-button" onclick="document.location='#'">
+                            Все отзывы
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <footer class="footer">
+                <div class="container container--flex_column">
+                    <img src="images/logo/logo_footer.svg" alt="Новая Столовая" class="footer-logo">
+                    <ul class="footer-nav">
+                        <li class="footer-nav__item">
+                            <a href="#" class="footer-nav__item-link">Меню</a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a href="#" class="footer-nav__item-link">Магазин</a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a href="#" class="footer-nav__item-link">Подписка</a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a href="#" class="footer-nav__item-link">Доставка</a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a href="#" class="footer-nav__item-link">Партнерам</a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a href="#" class="footer-nav__item-link">Контакты</a>
+                        </li>
+                    </ul>
+
+                    <button type="button" class="button button--instagram button--instagram--footer" onclick="document.location='#'">
+                        <span class="visually-hidden">Instagram</span>
+                    </button>
+                </div>
+
+                <div class="container container--footer">
+                    <div class="footer-text-container">
+                        <p class="footer-text">
+                            ООО "ВегаДом" УНП 111453331
+                        </p>
+                        <p class="footer-text">
+                            Регистрационный номер в торговом реестре 123456 от 03.10.2016
+                        </p>
+                        <p class="footer-text">
+                            220036 К.Либкнехта 23-1-145
+                        </p>
+                    </div>
+                    <p class="footer-text footer-text--right">
+                        Рейтинг: 4.2 (На основе 19 отзывов)<br>
+                        Разработка и продвижение сайта
+                        <a href="#" class="footer-text-link">
+                            Frontend.by
+                        </a>
+                    </p>
+                </div>
+            </footer>
+
+        </div><!-- /.filter -->
+    </div><!-- /.overflow -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
